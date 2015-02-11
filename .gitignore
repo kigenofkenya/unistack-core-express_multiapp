@@ -1,7 +1,9 @@
-# git ingore paths v1 
+# git ingore paths v2
+
 
 # Development directory
 dev
+usrdata
 
 # OSX DSstore file
 .DS_Store
