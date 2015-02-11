@@ -1,0 +1,43 @@
+extends layout2
+block content
+  #mainHome
+    .mainBox.top_drawer
+      textarea#input
+      div#output
+    .mainBox.bottom_drawer
+      ul
+        li
+          | Markdown Files
+          ul#assets_md
+            if files
+              for file in files
+               li: a(href='javascript:void(0)' data-uri="#{file}" data-ftype="markdown") #{file}
+            else
+              li no saved files.   
+        li
+          | Jade Files
+          ul
+            li Sub-list-item
+            li Sub-list-item
+            li Sub-list-item
+            li Sub-list-item
+        li
+          | Combined CSS/JS/HTML projects
+          ul
+            li Sub-list-item
+            li Sub-list-item
+            li Sub-list-item
+            li Sub-list-item        
+
+
+
+
+
+
+
+
+
+
+
+
+     

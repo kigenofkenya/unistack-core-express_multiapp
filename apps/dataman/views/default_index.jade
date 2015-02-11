@@ -1,0 +1,20 @@
+extends default_layout
+
+block content
+  h1= title
+  if templateControl == "table"
+    include partials/control/table
+  else if templateControl =="forms"
+    include partials/control/forms
+  else
+    p no control template 
+  div#targ
+  if templateShow == "list"
+    include partials/show/list
+  else if templateShow =="table"
+    include partials/show/table
+  else if templateShow =="basic"
+    include partials/show/basic    
+  else
+    p no show template partial
+

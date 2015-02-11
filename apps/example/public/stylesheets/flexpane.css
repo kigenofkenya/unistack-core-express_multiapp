@@ -1,0 +1,214 @@
+.navheader {
+     background-color: #336699;
+        height: 60px;
+        float:left;
+        width:100%;
+
+      }
+#codepen-footer,#codepen-footer *{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box
+  ;box-sizing:border-box
+}
+
+  #codepen-footer{
+      border-bottom: 1px solid #ddd;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:0 10px;
+    height:30px;
+    color:#eeeeee;
+ background-color: #222;
+    font:12px/30px "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;line-height:30px}
+
+    #codepen-footer a{color:#a7a7a7;text-decoration:none;}
+
+    #codepen-footer a:hover{color:white;}
+    #footer-right{position:absolute;right:5px;top:0;}
+
+    @media (max-width: 600px){#footer-right{display:none;}}
+#inspect{
+  width:100%;
+}
+
+      #wd-c {
+       margin:0;
+       position:relative;
+        left:0px;
+        overflow:hidden;
+        height:100%;
+     width:100%;
+      }
+
+        #wd-1 {
+       background-color: #336699;
+        border-bottom:solid 4px #222;
+        height: 48px;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+      }
+
+      #wd-1 h1,#wd-1 h2, #wd-1 h3, #wd-1 p
+         {
+          font-weight:400;
+         color:#fff;
+      }
+      #wd-2 {
+      background: #555;
+       position: absolute;
+    top: 48px;
+   bottom:28px;
+    right: 0;
+    left: 0;
+      }
+      #wd-3 {
+     
+
+      position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+     /*whatever you want*/
+      }
+
+     h1, h2,  h3,  p
+         {
+          font-weight:400;
+         color:#fff;
+      }
+
+ {
+   position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  overflow-y:auto;
+    height: calc(100% - (80px)); 
+  background: #fff;
+  border-right: 1px solid #DDD;
+
+}
+.message-box {
+    float:left;
+    width: 400px;
+  height:600px;
+    overflow-y: auto;
+overflow-x:hidden;
+}
+ h4 {
+  margin: 0;
+  padding: 10px;
+  font-weight: 400;
+  color: #222;
+  border-bottom: 1px solid #DDD;
+}
+ .searchbox {
+  padding: 20px;
+  background: #FCFCFC;
+}
+ .searchbox input[type="search"] {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+}
+ .message-list {
+  overflow-y:auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+    height: calc(100% - 45px); 
+}
+ .message-list li {
+
+  transition: background-color .3s ease;
+ 
+
+  padding: 10px 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+.message-list li a {
+  width: 100%;
+
+
+ color: #fff;
+}
+.message-list li a.wide {
+ font-weight: 400;
+   font-size: 18px;
+}   
+ .message-list li:hover a {
+  
+ color: #428bca;
+}
+.navigation li.active {
+  background-color: #428bca;
+  color: #fff;  
+}
+ .message-list li input[type="checkbox"] {
+  appearance: none;
+  cursor: pointer;
+  margin: 5px 10px 0 0;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+ .message-list li input[type="checkbox"]:checked {
+  background: #EFEFEF;
+}
+ .message-list li .preview {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+ .message-list li .preview h3 {
+  margin: 0;
+  font-weight: 400;
+  color: #333;
+}
+ .message-list li .preview h3 small {
+  float: right;
+  color: #AAA;
+  font-size: 13px;
+  font-size: .8125rem;
+}
+ .message-list li .preview p {
+  color: #888;
+  margin: 5px 0;
+}
+ .message-list li:hover {
+  background: #fff;
+  color: #428bca;
+}
+ .message-list li.active {
+  background: #fd9162;
+  border-right: 3px solid rgba(0, 0, 0, 0.1);
+}
+ .message-list li.active .preview h3,  .message-list li.active .preview h3 small,  .message-list li.active .preview p {
+  color: #fff;
+}
+ .message-list li.new {
+  background: #fff;
+  border-right: 3px solid #44c4e7;
+}
+
+
+          

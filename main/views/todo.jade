@@ -1,0 +1,22 @@
+doctype html
+html
+  head(lang='en')
+    meta(charset='UTF-8')
+    title YDN0DB Todo list app by Node-Webkit
+    meta(charset="UTF-8")
+    link(rel="stylesheet" href="#{root}/stylesheets/style.css")
+    script(src='/libs/ydn/ydn.db-dev.js')
+  body
+    h3 YDN-DB todo list sample app
+    ul#todoItems
+    input#todo(type='text', name='todo', placeholder='add a ', style='width: 200px;')
+    input(type='submit', value='Add Todo Item', onclick='addTodo(); return false;')
+    br
+    br
+    div
+      pre#statbox
+      button#load(title='load cached data file') Load
+      button#save(title='update data file') Save
+    script(src='/javascripts/todo.js')
+    script(src='/javascripts/io.js')
+

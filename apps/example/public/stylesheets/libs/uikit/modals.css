@@ -1,0 +1,54 @@
+/* end form */
+
+/* 
+
+MODALS
+
+*/
+#modal {
+  display: none;
+  position: fixed;
+  background-color: #efefef;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  border-radius: 0px;
+  width: 340px;
+  margin-top: -150px;
+  margin-left: -170px;
+  border-bottom: 3px solid #2c90c6;
+  border-left: 3px solid #2c90c6;
+  border-right: 3px solid #2c90c6;
+}
+
+#modal.active{
+display: block; 
+z-index: 1000;
+
+
+
+}
+#modal .topbar{
+  background: #2c90c6;
+}
+#modal span {
+  display: inline-block;
+  background: #2c90c6;
+  padding: 10px;
+  color: #efefef;
+  border-radius: 0px;
+}
+#modal span div {
+  margin: 14px 14px;
+}
+#modal .close {
+  float: right;
+  color: #fff;
+  font-family: serif;
+  font-size: 15px;
+  cursor:pointer;
+}
+#close:hover {
+  color: #000;
+}
+

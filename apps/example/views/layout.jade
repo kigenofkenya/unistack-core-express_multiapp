@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title #{pageTitle}
+    meta(name='viewport', content='width=device-width', initial-scale='1')
+    link(rel='stylesheet', href='#{root}/stylesheets/libs/reset.css')      
+    link(rel='stylesheet', href='#{root}/stylesheets/libs/uikit/core.css')      
+    link(rel='stylesheet', href='#{root}/stylesheets/libs/uikit/buttons.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/libs/uikit/buttons_extended.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/libs/uikit/forms.css')           
+    link(rel='stylesheet', href='#{root}/stylesheets/core2.css', type='text/css')
+    link(rel='stylesheet', href='#{root}/stylesheets/tabs.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/flexpane.css')      
+    link(rel='stylesheet', href='#{root}/stylesheets/metroradio.css', type='text/css')   
+    link(rel='stylesheet', href='#{root}/stylesheets/nlogic2.css', type='text/css')      
+  body.state-initial.no-touch
+    #wrapper
+      #headerHome
+        #logo
+          | #{pageTitle}
+        ul.mainmenu.left
+          li: a(href="" data-state='sidebar_extend') MASTER VIEW
+          li: a(href="" data-state='nav') DATABASES
+          li: a(href="" data-state='sidebar') TABLES
+        ul.mainmenu.right
+            li: a(href="#" id="loginctl1") login
+            li: a(href="") trigger2          
+        #buttonDiv.undisplay
+          //- button#runbutton Run
+        ul#toggles.undisplay
+          li.toggle.selected HTML
+          li.toggle CSS
+          li.toggle JS
+      #mainHome
+        block content
+    block msgbox       
+    script(type='text/javascript', src='#{root}/javascripts/modules/purejs.statehandler.js')
+    script(type='text/javascript', src='#{root}/javascripts/modules/purejs.ajax.js')
+    if pagescripts
+      for item in pagescripts
+        script(type='text/javascript', src='#{root}/javascripts/#{item}.js')          
+    if initscript
+      script(type='text/javascript', src='#{root}/javascripts/initscripts/#{initscript}.js')        
+
+

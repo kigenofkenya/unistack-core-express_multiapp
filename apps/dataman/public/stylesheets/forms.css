@@ -1,0 +1,15 @@
+.invalid input:required:invalid {
+    background: #BE4C54;
+   color:#000;
+}
+
+.invalid input:required:valid {
+    background: #17D654 ;
+color:#000;
+}
+
+input {
+  display: block;
+  color:#000;
+  margin-bottom: 10px;
+}

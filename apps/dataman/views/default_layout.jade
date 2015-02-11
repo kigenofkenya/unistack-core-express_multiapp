@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title #{appTitle}
+    link(rel='stylesheet', href='#{root}/stylesheets/style.css')
+    if pagestyles
+      for item in pagestyles
+        link(rel='stylesheet', href='#{root}/stylesheets/#{item}.css')
+    if libstyles
+      for item in libstyles
+        link(rel='stylesheet', href='#{root}/libs/stylesheets/#{item}.css')           
+  body
+    block content
+    p test
+    if pagescripts
+      for item in pagescripts
+        script(type='text/javascript', src='#{root}/#{item}.js')
+    if initscript
+      script(type='text/javascript', src='#{root}/javascripts/initscripts/#{initscript}.js')            

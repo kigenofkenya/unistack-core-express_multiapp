@@ -1,0 +1,22 @@
+extends layout_editor
+block content
+  div
+    div
+      if files
+        for file in files
+          a(class="btn btn-default" href="#{root}/view/#{file}") #{file}
+      else
+        i no saved files.
+    a(class="btn btn-primary" data-action="showNameDialog" href="#{root}/edit") New...
+  div(class="modal" id="dlgName")
+    div(class="modal-dialog")
+      div(class="modal-content")
+        form(id="nameDialog")
+          div(class="modal-header")
+            button(type="button" name="name" class="close" data-dismiss="modal" aria-hidden="true")
+          div(class="modal-body")
+            input(input type="text" name="name" class="form-control" pattern="[\w]+")
+          div(class="modal-footer")
+            button(type="button" class="btn btn-default" data-dismiss="modal") Cancel
+            button(type="submit" class="btn btn-primary") OK
+script(src='#{root}/javascripts/editor.js')        

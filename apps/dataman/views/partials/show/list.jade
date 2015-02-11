@@ -1,0 +1,5 @@
+ul.applist-list
+  for item in apps
+    li(data-rec_id="#{item.uri}")
+      h4 #{item.name}
+      span: a(href="#{approot}/#{item.uri}" title="#{item.name}") #{item.name}

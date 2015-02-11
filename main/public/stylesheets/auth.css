@@ -1,0 +1,26 @@
+html {
+
+}
+body {
+background: #ddd;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-rendering: optimizeLegibility;
+font-size: 13px;
+  width: 100%;
+   padding: 50px;
+
+
+}
+h1{
+      text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+.error {
+  color: red
+}
+.success {
+  color: green;
+}

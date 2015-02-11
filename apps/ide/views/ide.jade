@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    link(rel='stylesheet', type='text/css', href='#{root}/stylesheets/dragui.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/listbox.css')
+  body#index_container
+    #menu_container
+      h2 menu container
+      span.scrollArea
+        if template == "list"
+          include partials/list
+        else if template =="table"
+          include partials/table
+        else
+          p no partial
+        ul#targ
+      .drag_content.horizontally.right
+    #content_container
+      h2 content container
+      form#enquiry(action='')
+        .textwrapper
+          .force-overflow
+            textarea#txtbox
+    #sublime_container
+      h2 sublime container
+    script(src='#{root}/libs/zepto.min.js')
+    script(src='#{root}/javascripts/dragui.js')
+    script(src='#{root}/javascripts/ideapp.js')
+

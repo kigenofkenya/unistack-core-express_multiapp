@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title todos riot
+    meta(charset="UTF-8")
+    link(rel="stylesheet" href="/stylesheets/todo.css")
+    script(src='/libs/riot.js')
+  body
+    #mctl
+      button#test1 test
+    todos
+    #tmpbox !{tmpl}
+    #tagbox !{tag}
+    script(type='text/javascript').
+      var initdata=!{tdata};
+    script(type='text/javascript', src='/javascripts/modules/purejs.ajax.js')    
+    script(src='/javascripts/tododev/tag.js')
+    script(src='/javascripts/tododev/init.js')
+

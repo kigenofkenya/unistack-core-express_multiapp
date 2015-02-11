@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  #section2.panel
+    .content
+      h2 page2-section 2
+  #section3.panel
+    .content
+      h2 page2-section 3
+  #section4.panel
+    .content
+      h2 page2-section 4
+  // /sections
+  // Navigation
+  #navigation
+    h1 Page2
+    ul#section-nav
+      li
+        a#link-section1(href='#section1') sec1-page1
+      li
+        a#link-section2(href='#section2') sec2 page1
+      li
+        a#link-section3(href='#section3') sec3page1
+      li
+        a#link-section4(href='#section4') sec4page1
+    nav#index-nav
+      a(href='#{root}/i1#section1') Page1
+      a.current-index(href='#section1') Page 2
+      a(href='#{root}/i3#section1') Page 3
+
+
+

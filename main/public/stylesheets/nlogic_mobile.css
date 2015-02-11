@@ -1,0 +1,30 @@
+/* Now get responsive */
+@media only screen and (max-width: 52em) {
+	
+	[role^="navigation"],	
+	[role^="sidebar"] {
+		width: 80%;
+		margin-left: -100%;
+		z-index: 2;
+background-color:rgba(255,255,255,0.8);
+		-moz-box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.4);
+		-webkit-box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.4);
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.4);
+		color: #000000;
+	}
+
+	/* Nav state */
+	.state-nav [role^="content"],
+	.state-sidebar [role^="content"] {
+		margin-left: 0;
+	}
+	.state-nav,
+	.state-sidebar {
+		background-color: #eed200;
+	}
+
+  /* Show the close button */
+	.close {
+		display: block;
+	}
+}

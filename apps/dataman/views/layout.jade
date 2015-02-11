@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title #{pageTitle}
+    meta(name='viewport', content='width=device-width', initial-scale='1')
+    link(rel='stylesheet', href='/stylesheets/core.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/nlogic.css', type='text/css') 
+  body.state-nav.no-touch
+    #wrapper
+      #headerHome
+        #logo
+          | #{pageTitle}
+        ul#mainmenu
+          li: a(href="") trigger1
+          li: a(href="") trigger2
+        #buttonDiv.undisplay
+          button#runbutton Run
+        ul#toggles.undisplay
+          li.toggle.selected HTML
+          li.toggle CSS
+          li.toggle JS
+      #mainHome
+        block content
+      script(type='text/javascript', src='/javascripts/modules/purejs.statehandler.js')
+
+

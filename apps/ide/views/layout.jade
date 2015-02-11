@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title Markdown Library: #{pageTitle}
+    meta(name='viewport', content='width=device-width', initial-scale='1')
+    link(rel='stylesheet', href='#{root}/stylesheets/messagebox.css')
+    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js')
+    script(src='http://code.jquery.com/jquery-2.1.0.min.js')
+  body
+    nav.navbar.navbar-default(role='navigation')
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='#{root}') Ide System
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#') #{pageTitle}
+            li
+              a(href='#' id="dev_1") New
+    .container
+      block content
+    #msgModal.msgbox.simpleModal
+      h3.msg_title
+      p.msg_content(<='', p='')
+      p
+        | Name:
+        input#docname(type='text')
+        | .md
+      footer
+        a#cancelMsg.butt.msgct Cancel
+        a#acceptMsg.butt.msgct Accept
+    script(src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
+    script(src='#{root}/javascripts/msgbox.js')             
+    script(src='#{root}/javascripts/mdlibrary.js')   
+

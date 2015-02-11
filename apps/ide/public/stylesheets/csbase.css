@@ -1,0 +1,10 @@
+html { 
+  background: #fff;
+}
+body {
+  max-width: 55em;
+  margin: 0 auto;
+  padding: 1em 5% 5em;
+  overflow: auto;
+}
+article { border-color: transparent;}

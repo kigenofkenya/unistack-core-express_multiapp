@@ -1,0 +1,69 @@
+
+/* 
+ACCODRDIAN DL
+
+*/
+dl.accordian {
+  margin: 14px 0 7px;
+}
+dl.accordian dt {
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 20px;
+  background: #dbdbdb;
+  color: #5d677b;
+}
+dl.accordian dt:after {
+  position: absolute;
+  content: '+';
+  right: 10.5px;
+}
+dl.accordian dt:hover {
+  transition: all 0.2s ease-in-out;
+  color: #1b1e24;
+}
+dl.accordian dt.exp:after {
+  content: '\2212';
+}
+dl..accordian dt.nosign:after {
+  content: '';
+}
+dl.accordian dd {
+  z-index: 1;
+  position: relative;
+  border-bottom: 2px solid #dbdbdb;
+  border-left: 2px solid #dbdbdb;
+  border-right: 2px solid #dbdbdb;
+  background: #f7f7f7;
+}
+dl.accordian dd:after {
+  background: #dbdbdb;
+  content: "";
+  display: block;
+  height: 16px;
+  left: 20px;
+  position: absolute;
+  width: 16px;
+  top: -8px;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+dl.accordian dd ul {
+  list-style-type: none;
+}
+dl.accordian dd ul.checks li {
+  margin: 7px 0;
+}
+dl.accordian dd ul.checks li:before {
+  content: '\2713';
+  margin: 0 6px 0 0;
+  color: #9dab6f;
+}
+dl.accordian dt dd {
+  padding: 0px;
+}
+dl.accordian dt ~ dd {
+  padding: 12px;
+}

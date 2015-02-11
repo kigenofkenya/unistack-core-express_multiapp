@@ -1,0 +1,4 @@
+{"date_created":"2015-02-08T06:48:19.132Z","name":"Irrico's Pipes","developer_note":"This is an unlinked record, pre-versioning, not intened for migration.","id_table":"ZyBklkMKY","_id":"LuttmSA2Y2zWLMoJ"}
+{"name":"dbindex","date_created":{"$$date":1421141623611},"deploy_ready":false,"tables":[{"name":"suppliers","id":"ZJmpakzKK","parent":"ZyBklkMKY","index_fields":{"id_product_items":["id_product","id_item"]}},{"name":"items","id":"ZyBklkMKY","parent":"root","index_fields":{"id_product_suppliers":["id_product","id_supplier"]}},{"name":"products","id":"WJzPsXzKF","parent":"ZyBklkMKY","index_fields":{"id_supplier_items":["id_supplier","id_item"]}}],"_id":"Wu1sjE2Gg9he1EVv"}
+{"date_created":"2015-02-09T15:18:47.101Z","name":"test peoduct","developer_note":"bklasf ","id_table":"WJzPsXzKF","_id":"lOwDlKc34NJQDc70"}
+{"date_created":"2015-02-08T00:44:29.817Z","name":"Amiran","developer_note":"test stage 2","id_table":"ZJmpakzKK","_id":"uF79TkqlOaTVtvyG"}

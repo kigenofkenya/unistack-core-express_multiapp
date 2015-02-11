@@ -1,0 +1,77 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title md3
+    link(rel='stylesheet', type='text/css', href='#{root}/libs/normalize.css')
+    link(rel='stylesheet', type='text/css', href='#{root}/stylesheets/md3.css')
+    link(rel='stylesheet', type='text/css', href='#{root}/stylesheets/finderui.css')
+    script(src='#{root}/libs/prefixfree.min.js')
+    script(src='#{root}/libs/modernizr.js')
+  body
+    #wrapper(class='#{pagemode}')
+      .inner
+        .stage
+          .stagein.finder.directory
+            h1#finder_title
+              | RESOURCE:
+              a(href='http://parent/') /ROOT/
+              | /PARENT
+              a(href='/') /THISGROUP
+              | :meta
+            input#newdoc(type='button', value='new document')                          
+            input#search(type='text', placeholder='Search', autocomplete='off')
+            #finder_wrapper
+              ul#files
+                li.js
+                  a(href='/script1.js'  data-file='js1' class='js' title='javascript') javascript
+                li.default
+                  a(href='/script1.js'  data-file='js2' class='js' title='default') default
+                li.default
+                  a(href='/markdown1.md'  data-file='md1' class='md' title='markdown') markdown                              
+        .editor
+          #doc-control.editor-control
+            label name
+              input(input type="text" id="editor-title", name="name" value="#{name}" class="form-control" pattern="[\w]+")
+          #server-control.editor-control.hide
+            a#eye2(href='#', title='back') Back to Editing
+            a(id="upload" href='#upload') Upload                     
+            a(href='#new') New
+            a(href='#save') save
+            a(href='#load') load
+            a(href='#delete') Delete
+            a(href='#duplicate') duplicate
+          #editor-control.editor-control
+            a#eye(href='#', title='Preview') Preview            
+            a(href='#bold') Bold
+            a(href='#italic') Italic
+            a(href='#code') Code
+            a(href='#code-block') Code Block
+            a(href='#quote') Quote
+            a(href='#ul-list')
+              abbr(title='Unordered List') UL
+            a(href='#ol-list')
+              abbr(title='Ordered List') OL
+            a(href='#link') Link
+            a(href='#image') Image
+            a(href='#h1') H1
+            a(href='#h2') H2
+            a(href='#h3') H3
+            a(href='#h4') H4
+            a(href='#h5') H5
+            a(href='#h6') H6
+            a(href='#hr') Horizontal Rule
+            a(href='#undo') Undo
+            a(href='#redo') Redo
+          textarea#editor-area.editor-area
+          // result
+          .result
+    script(src='#{root}/libs/showdown.js')
+    script(type='text/javascript', src='/javascripts/modules/purejs.ajax.js')      
+    script(type='text/javascript', src='#{root}/javascripts/appmodules/md3.js')
+    script(type='text/javascript', src='#{root}/javascripts/appmodules/finderui.js')            
+    script(src='#{root}/javascripts/editor_library.js')
+    if initscript
+      script(type='text/javascript', src='#{root}/javascripts/initscripts/#{initscript}.js')
+
+

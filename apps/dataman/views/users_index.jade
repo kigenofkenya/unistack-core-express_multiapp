@@ -1,0 +1,13 @@
+extends users_layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div !{srv_top}
+  h4 basic form
+  div#form1 !{srv_1}
+  h4 validating form linked to db
+  div#form2 !{srv_2}  
+  div !{srv_bottom}
+  p Status:
+    span#status unsubmitted

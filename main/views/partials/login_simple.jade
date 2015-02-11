@@ -1,0 +1,18 @@
+if usertoken
+  li logged in as: 
+    a(href="/account") #{usertoken.name}
+  li: a(href="/logout") log out
+  li: a(href='#', data-state='bottom') account info 
+else
+  div#loginbox
+      form(class='login' method='post' action='/login')
+        .field.half
+          label(for="username") login
+          input(type="text" id="username" name='username')
+        .field.half.last
+          label(for="password") password
+          input(type="password" id="password" name='password')
+        .submitbox
+          input(type="submit" id="login_submit" value="login")
+      if message
+        div !{message}          

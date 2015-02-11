@@ -1,0 +1,9 @@
+ul#feed1(data-inspect='tab1-4')
+  each feed_item in feed_items
+    li(data-uri='#{feed_item.uri}')
+      img(class="inspect_item", src='img/item.jpg')
+      span(class="inspect_item activity") Item 1d
+      span(class="date") date: 2 days ago
+      span(class="actions")
+        a edit
+        a delete

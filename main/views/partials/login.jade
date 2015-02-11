@@ -1,0 +1,22 @@
+div#loginbox
+  if usertoken
+    p Username: #{usertoken.name}
+    p Permissions: #{usertoken.permissions}
+    p Restricted Routes Available:
+      p
+        | 
+        a(href='/restricted') /restricted
+        | .
+  else
+    p not logged in.
+  if message
+    p message shown
+    //- script.
+      //- loginhandle.test2({!{message}});
+  else
+    if usertoken
+      p no message and user token
+    else
+      //- no message and no user token
+      script.
+        loginhandle.prelogin();

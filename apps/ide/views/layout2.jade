@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title #{pageTitle}
+    meta(name='viewport', content='width=device-width', initial-scale='1')
+    link(rel='stylesheet', href='#{root}/stylesheets/editor.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/codeplayer.css')    
+  body
+    #wrapper
+      #headerHome
+        #logo
+          | #{pageTitle}
+        ul#mainmenu
+          li trigger2
+          li trigger1
+        #buttonDiv
+          button#runbutton Run
+        ul#toggles
+          li.toggle.selected HTML
+          li.toggle CSS
+          li.toggle JS
+      block content
+      script(src='#{root}/libs/showdown.js')
+      script(src='#{root}/javascripts/markdown_editor.js')
+
+

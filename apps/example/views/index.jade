@@ -1,0 +1,40 @@
+extends layout
+block content
+  .animated.directory(role='main')
+    .animated.navigation(role='navigation')
+      ul
+        li.active.wide(data-state='nav')
+          a(href='#') nav
+        li.wide(data-state='initial')
+          a(href='#') initial
+        li.wide
+          a(data-state='initial', href='#') test3
+    .animated.sidebar(role='sidebar')
+      .spaceEmOut
+        form(name="table_radio")
+          fieldset.switch.switch-three
+            legend Tables:
+            input#suppliers(name='tRads' type='radio' value='tset1')
+            label(for='suppliers') SUPPLIERS
+            input#products(name='tRads' type='radio' value='tset2')
+            label(for='products') PRODUCTS
+            input#items(name='tRads'  type='radio' value='tset3')
+            label(for='items') ITEMS
+            span.switch-button      
+      ul#trec_list.message-list
+    #stage_wrapper.animated(role='content')
+      .stage_box
+        include partials/stage
+    .padded.animated(role='bottomdrawer')
+      p
+        a(data-state='bottomdown', href='#') bottomdown
+      p
+        a(data-state='bottomdown_navopen', href='#') bottomdown navopen
+  // end main
+  .padded.animated(role='presentation')
+    h3 presentation content
+    p
+      a(data-state='inital', href='#') initial
+
+
+

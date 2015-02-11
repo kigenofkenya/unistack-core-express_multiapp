@@ -1,0 +1,66 @@
+div#wd-c
+  div#wd-1
+    div#ctlSet_2
+      div.buttonbar.bar#header_control   
+        button(class="btn blue" data-tab='tab-1' data-evt="event1") create
+        button(class="btn blue" data-tab='tab-2' data-evt="event2") view
+        button(class="btn blue"  data-tab='tab-3' data-evt="event3") batch      
+           
+  div#wd-2
+    div#inspect.tabs 
+      div.tab
+        input(type="radio" id="tab-1" name="tab-group-1")
+        label(class="tablabel" for="tab-1") form 1
+        div.tabcontent
+          h4 add new supplier form.
+          div.defaultform#form1 !{srv_1}
+      div.tab
+        input(type="radio" id="tab-2" name="tab-group-1")
+        label(class="tablabel" for="tab-2") form 2
+        div.tabcontent
+          h4 add new product form.
+          div.defaultform#form2 !{srv_2}         
+      div.tab
+        input(type="radio" id="tab-3" name="tab-group-1")
+        label(class="tablabel" for="tab-1") form 3
+        div.tabcontent
+          h4 add new item form.
+          div.defaultform#form3 !{srv_3}    
+      div.tab
+        input(type="radio" id="tab-4" name="tab-group-1"  checked)
+        label(class="tablabel" for="tab-4") main view
+        div.tabcontent
+          div#maintab
+            h4 main view
+            p needs edit functions
+            p clean uo aoi
+            p needs devnote system
+            p classify controls to reduce and sync views automatically.
+      div.tab
+        input(type="radio" id="tab-5" name="tab-group-1")
+        label(class="tablabel" for="tab-5") inspect
+        div.tabcontent
+          div#viewrec
+            h4 inspector main
+      div.tab
+        input(type="radio" id="tab-6" name="tab-group-1")
+        label(class="tablabel" for="tab-6") edit one
+        div.tabcontent
+          div#viewmeta
+            h4 edit single record
+      div.tab
+        input(type="radio" id="tab-7" name="tab-group-1")
+        label(class="tablabel" for="tab-7") edit group
+        div.tabcontent
+          div#editgroup
+            h4 edit group
+      div.tab
+        input(type="radio" id="tab-8" name="tab-group-1")
+        label(class="tablabel" for="tab-8") delete
+        div.tabcontent
+          div#editgroup
+            h4 delete functions.                                               
+  div#wd-3
+    div#codepen-footer
+      span#status         
+      span#footer-right !{srv_bottom}       

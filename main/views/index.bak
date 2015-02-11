@@ -1,0 +1,22 @@
+doctype
+html
+  head
+    title unistack
+    meta(charset="UTF-8")
+    link(rel="stylesheet" href="/stylesheets/style.css")
+    link(rel="stylesheet" href="/stylesheets/login.css")      
+    link(rel="stylesheet" href="/stylesheets/olist.css")      
+  body
+    .container
+      include partials/login_simple
+      .grey
+        h1
+          span.logo-braces {unitName:
+          a(href='basepage.html') unistack
+          span.logo-braces }
+        pre.
+          /* meta data for the raw json file of this resource here*/        
+      div.odiv
+        include partials/olist
+      p#targ
+    script(src='/javascripts/app.js')

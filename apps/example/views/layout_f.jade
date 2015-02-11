@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='#{root}/stylesheets/libs/reset.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/libs/uikit/core.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/libs/uikit/buttons.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/libs/uikit/buttons_extended.css')    
+    link(rel='stylesheet', href='#{root}/stylesheets/libs/uikit/forms.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/libs/uikit/modals.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/tabs.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/core.css')        
+    link(rel='stylesheet', href='#{root}/stylesheets/flexpane.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/nlogic.css')
+  body(class='state-nav no-touch')
+    div(class='animated' role='main')
+      div( role="navigation" class="animated navigation")
+        block navigation
+      div(role="sidebar" class="animated sidebar")
+        block sidebar
+      div(id="stage_wrapper" role="content" class="animated")
+        block content
+      div(class='animated  light' role='bottomdrawer')
+        block drawer
+    div(id='presentation',class='animated padded dark',role='presentation' )
+        block presentation
+    script(type='text/javascript', src='#{root}/javascripts/modules/purejs.statehandler.js')
+    script(type='text/javascript', src='#{root}/javascripts/modules/fetchtool.js') 
+    script(type='text/javascript', src='#{root}/javascripts/modules/posttool.js') 
+    if pagescripts
+      for item in pagescripts
+        script(type='text/javascript', src='#{root}/javascripts/#{item}.js')
+    if initscript
+      script(type='text/javascript', src='#{root}/javascripts/initscripts/#{initscript}.js')
+       

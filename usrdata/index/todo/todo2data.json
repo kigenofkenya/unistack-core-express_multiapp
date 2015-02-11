@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "name": "indextodo",
+    "version": "1.0",
+    "schema": "testschema",
+    "dateobj": {
+      "created": "dummydate",
+      "updated": "dummydate"
+    }
+  },
+  "records": {
+    "[{\"title\":\"Learn riotjs!\",\"items\":[{\"title\":\"Set up plunker example\",\"done\":false},{\"title\":\"Set up inline template\",\"done\":false},{\"title\":\"Add multiple instances to example\",\"done\":true},{\"title\":\"Make non todo example\"}]},{\"title\":\"Test me mandy\",\"items\":[{\"title\":\"a point\"},{\"title\":\"another point\"},{\"title\":\"dsad\"}]},{\"title\":\"fabio system\",\"items\":[{\"title\":\"get put/delete working\"},{\"title\":\"needs  a refresh when adding an item\"}]}]": ""
+  }
+}

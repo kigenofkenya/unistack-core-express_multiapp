@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    title #{pageTitle}
+    meta(name='viewport', content='width=device-width', initial-scale='1')
+    link(rel='stylesheet', href='/stylesheets/core3.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/nlogic3.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/msgbox.css', type='text/css')
+    link(rel="stylesheet" href="/stylesheets/login.css")      
+    link(rel="stylesheet" href="/stylesheets/olist.css")
+    link(rel="stylesheet" href="/stylesheets/menutree.css")      
+    link(rel="stylesheet" href="/stylesheets/splash.css")                 
+    script(type='text/javascript', src='/javascripts/modules/msgbox.js')
+    if servertoken
+      script.
+        var prevPage="appmode-core"; 
+    else
+      script.
+        var prevPage="appmode-splash";
+    if usertoken
+      script.
+        var prevState="state-initial";
+    else
+      script.
+        var prevState="state-pres";
+  if !usertoken
+    if servertoken                             
+      body(class="no-touch #{pagestate} appmode-core")
+    else
+      body(class="no-touch state-pres")
+    end
+  if usertoken
+    if (usertoken.permissions=='admin')
+      body(class="no-touch #{pagestate} appmode-admin")
+    else
+      body(class="no-touch #{pagestate} appmode-core")
+  end
+    #wrapper
+      #headerHome
+        #logo
+          | #{pageTitle}
+        ul.mainmenu.left.undisplay
+          li: a(href="") trigger1
+          li: a(href="") trigger2
+        ul.mainmenu.right
+          include partials/login_simple         
+        #buttonDiv.undisplay
+          //- button#runbutton Run
+        ul#toggles.undisplay
+          li.toggle.selected HTML
+          li.toggle CSS
+          li.toggle JS
+      #mainHome
+        block content
+    block msgbox
+     
+    script(type='text/javascript', src='/javascripts/modules/purejs.statehandler.js')
+    if initscript
+      script(type='text/javascript', src='/javascripts/initscripts/#{initscript}.js')        
+
+

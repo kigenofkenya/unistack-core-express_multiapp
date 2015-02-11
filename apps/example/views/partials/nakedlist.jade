@@ -1,0 +1,4 @@
+for item in tmpldata
+  li(data-rec_id="#{item._id}")
+    a(href="#look" class="wide" data-rec_action="view" data-section="#{item.id_table}") #{item.name}
+    span: a(href="#delete" title="#{item.name}" data-rec_action="delete") delete

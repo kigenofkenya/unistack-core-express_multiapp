@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='#{root}/stylesheets/style.css')
+    link(rel='stylesheet', href='#{root}/stylesheets/forms.css')
+    if pagestyles
+      for item in pagestyles
+        link(rel='stylesheet', href='#{root}/stylesheets/#{item}.css')  
+  body
+    block content
+    p test
+    script(type='text/javascript', src='#{root}/javascripts/modules/purejs.statehandler.js')
+    script(type='text/javascript', src='#{root}/javascripts/modules/fetchtool.js') 
+    script(type='text/javascript', src='#{root}/javascripts/modules/posttool.js')     
+    script(type='text/javascript', src='#{root}/javascripts/modules/formserialize.js')  
+    script(type='text/javascript', src='#{root}/javascripts/appmodules/appmodule_forms.js')    
+    if pagescripts
+      for item in pagescripts
+        script(type='text/javascript', src='#{root}/#{item}.js')
+    if initscript
+      script(type='text/javascript', src='#{root}/javascripts/initscripts/#{initscript}.js')            

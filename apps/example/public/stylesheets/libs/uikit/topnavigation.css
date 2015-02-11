@@ -1,0 +1,92 @@
+
+
+/* 
+
+TOP MENU NAVIGATION (WITH DROPDOWNS
+
+*/
+
+
+.menu {
+  transition: all 0.2s ease-in-out;
+  display: block;
+  position: relative;
+  margin: 28px 0;
+  z-index: 1;
+  background-color: #2c90c6;
+  width: 100%;
+  min-height: 40px;
+}
+.menu,
+.sub-menu {
+  list-style: none;
+}
+.menu li {
+  float: left;
+  margin: 0 0px;
+  border-radius: 1px;
+  transition: all 0.2s ease-in-out;
+  background-color: #2c90c6;
+}
+.menu li:hover {
+  background-color: #77bce1;
+}
+.menu a {
+  padding: 12px 20px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.menu a:hover {
+  background: none;
+}
+.menu a.caret:after {
+  content: '\25BC';
+  font-size: 9.333333333333334px;
+  padding-bottom: 14px;
+}
+.menu li:hover > a {
+  /* activates link when mouse over sub-menu */
+}
+.menu li a ~ ul li {
+  max-height: 0px;
+  min-width: 160px;
+  transition: all 0.2s ease-in-out;
+}
+/*sub-menu trigger*/
+.menu li:hover a ~ ul {
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+}
+.menu li:hover a ~ ul li {
+  max-height: 60px;
+}
+.sub-menu {
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 10;
+  top: 44px;
+}
+.sub-menu:hover {
+  opacity: 1;
+  visibility: visible;
+}
+.sub-menu li {
+  clear: both;
+  background: rgba(27, 30, 36, 0.8);
+  border-bottom: 2px solid #4da7d8;
+}
+.sub-menu li:hover {
+  background: rgba(27, 30, 36, 0.8);
+}
+.sub-menu li:hover a {
+  color: #4da7d8;
+}
+
+
+

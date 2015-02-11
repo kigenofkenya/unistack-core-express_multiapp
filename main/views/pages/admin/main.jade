@@ -1,0 +1,13 @@
+h2 welcome administrator sir.
+p some explanation
+
+h3 admin links go here
+p: a(href='/admin') go to admin section of site
+p: a(data-page='core', href='#') switch front to core mode
+
+p logged in as: #{usertoken.name}
+p permissions level: #{usertoken.permissions}  
+if message
+  div !{message}
+else
+  p logged in but no message

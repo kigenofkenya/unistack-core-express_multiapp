@@ -1,0 +1,51 @@
+.tab > div h1,
+.tab > div h2,
+.tab > div h3,
+.tab > div h4,
+.tab > div p
+{
+
+  color: #222;
+}
+.tabs {
+
+  position: relative;   
+  height: 100%; /* This part sucks */
+  clear: both;
+  margin:  0;
+}
+.tab {
+  float: left;
+}
+.tab label.tablabel {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  /*position: relative;*/
+  left: 1px; 
+  position:fixed;
+  bottom:-200px;
+}
+.tab [type=radio] {
+  display: none;   
+}
+.tabcontent {
+  position: absolute;
+  margin:0;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right:0;
+  background: white;
+ 
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label.tablabel {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label.tablabel ~ .tabcontent {
+  z-index: 1;
+}

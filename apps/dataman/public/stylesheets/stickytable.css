@@ -1,0 +1,18 @@
+
+  .tablediv table{height:100px;overflow:auto;width:100%}
+  .tablediv td{ border-right:1px solid #222;}
+
+  /*.tablediv > tr > td:parent { background: none; }*/
+  .tablediv tr{border-left:1px solid #222; border-bottom:1px solid #222;}
+  .tablediv thead{background: #eee; padding:2px 6px; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; position: sticky; top: 0;}
+  .tablediv tbody{height:400px;overflow:auto}
+
+    
+
+  .tablediv table .imagecolumn {
+      width:64px;
+    }
+  .tablediv table td img{
+        width: 100%;
+  display: block;
+    }

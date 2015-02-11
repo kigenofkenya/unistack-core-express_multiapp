@@ -1,0 +1,572 @@
+
+/* 
+
+FROMS
+
+*/
+.form_default form {
+  z-index: 1;
+  margin: 0;
+  padding: 21px 10.5px 10.5px 10.5px;
+}
+.form_default form input[type="text"],
+.form_default form input[type="password"] {
+  width: 100%;
+  height: 38px;
+  display: block;
+  float: left;
+  outline: 0;
+  padding: 12px;
+  border: none;
+  margin: 2px auto;
+}
+.form_default form button {
+  display: block;
+  margin: 0 auto 4px auto;
+}
+
+
+
+
+.invalid input:required:invalid {
+    background: #BE4C54;
+   color:#000;
+}
+
+.invalid input:required:valid {
+    background: #17D654 ;
+color:#000;
+}
+
+input {
+  display: block;
+  color:#000;
+  margin-bottom: 10px;
+}
+
+
+
+
+.sectitle {
+  text-align:center;
+}
+
+
+
+
+
+
+.defaultform form {
+  padding:2em 8em;
+  margin:0 auto;
+}
+.defaultform form header {
+  margin: 0 0 20px 0; 
+}
+.defaultform form header div {
+  font-size: 90%;
+  color: #999;
+}
+.defaultform form header h2 {
+  margin: 0 0 5px 0;
+}
+.defaultform form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+.defaultform form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+.defaultform form > div > label,
+form legend {
+  width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+.defaultform form > div > div,
+.defaultform form > div > fieldset > div {
+  width: 75%;
+  float: right;
+}
+.defaultform form > div > fieldset label {
+  font-size: 90%;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.defaultform form input[type=text],
+.defaultform form input[type=email],
+.defaultform form input[type=url],
+.defaultform form input[type=password],
+.defaultform form textarea {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.defaultform form input[type=text],
+.defaultform form input[type=email],
+.defaultform form input[type=url],
+.defaultform form input[type=password] {
+  width: 50%;
+}
+.defaultform form input[type=text]:focus,
+.defaultform form input[type=email]:focus,
+.defaultform form input[type=url]:focus,
+.defaultform form input[type=password]:focus,
+.defaultform form textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+@media (max-width: 800px) {
+  .defaultform form {
+  padding:2em 18em;
+  margin:0 auto;
+}
+  .defaultform form > div {
+    margin: 0 0 15px 0; 
+  }
+  .defaultform form > div > label,
+  form legend {
+    width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  .defaultform form > div > div,
+  .defaultform form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  .defaultform form input[type=text],
+  .defaultform form input[type=email],
+ .defaultform form input[type=url],
+  .defaultform form input[type=password],
+  .defaultform form textarea,
+  .defaultform form select {
+    width: 100%; 
+  }
+}
+@media (min-width: 1200px) {
+
+  .defaultform form {
+  padding:2em 18em;
+  margin:0 auto;
+}
+  .defaultform form > div > label,
+  form legend {
+    text-align: right;
+  }
+}
+.defaultform form input[type=button], .defaultform form input[type=submit], .defaultform form button {
+  border: 1px solid #aaaaaa;
+  min-width: 100px;
+  border-radius: 3px;
+  padding: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+  background: -webkit-linear-gradient(top, #ffffff, #dddddd);
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+                      inset 0 0 10px rgba(0,0,0,0.1);
+  text-shadow: 0 1px 0 white;
+  vertical-align: middle;
+  color: #404040;
+  cursor: pointer;
+}
+.defaultform form input[type=button]:hover, .defaultform form input[type=submit]:hover, .defaultform form button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#d8d8d8));
+  background: -webkit-linear-gradient(top, #f8f8f8, #d8d8d8);
+  border-color: #a8a8a8;
+}
+.defaultform form input[type=button]:focus, .defaultform form input[type=submit]:focus, .defaultform form button:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 4px rgba(27, 155, 224, 0.9),
+                      inset 0 0 10px rgba(0,0,0,0.15),
+                      0 1px 0 rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: padding-box;
+}
+.defaultform form input[type=button]:active, .defaultform form input[type=submit]:active, button:active, .defaultform form input[type=checkbox]:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#ffffff))!important;
+  background: -webkit-linear-gradient(top, #dddddd, #ffffff);
+  border-color: #aaaaaa;
+  position: relative;
+  top: 1px;
+  -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+.defaultform form input[type=button]:disabled, .defaultform form input[type=submit]:disabled, .defaultform form button:disabled {
+  opacity: 0.6;
+  background: #eeeeee;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  cursor: default;
+  text-shadow: none;
+}
+
+.defaultform form input[type=checkbox]:active {
+  top: 0;
+}
+.defaultform form input[type=checkbox], .defaultform form input[type=radio] {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+  background: -webkit-linear-gradient(top, #ffffff, #dddddd);
+  vertical-align: middle;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0!important;
+  cursor: pointer;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+                      inset 0 0 3px rgba(0,0,0,0.1);
+}
+.defaultform form input[type=checkbox]:focus, .defaultform form input[type=radio]:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 4px rgba(27, 155, 224, 0.9),
+                      inset 0 0 10px rgba(0,0,0,0.15),
+                      0 1px 0 rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: padding-box;
+}
+.defaultform form input[type=checkbox]:hover, .defaultform form input[type=radio]:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#d8d8d8));
+  background: -webkit-linear-gradient(top, #f8f8f8, #d8d8d8);
+  border-color: #a8a8a8;
+}
+input[type=checkbox]:checked::after, input[type=radio]:checked::after {
+  content: "✓";
+  line-height: 10px;
+  font-family: Arial, sans-serif!important;
+  font-size: 13px;
+  margin-left: 1px;
+  color: #404040;
+  text-shadow: 0 1px 0 white;
+}
+input[type=checkbox]:disabled, input[type=radio]:disabled {
+  opacity: 0.6;
+  background: #eeeeee;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  cursor: default;
+}
+input[type=radio] {
+  border-radius: 8.5px;
+}
+input[type=radio]:checked::after {
+  content: "•";
+  font-size: 14px;
+  position: relative;
+  top: 1px;
+}
+input[type="text"], textarea, input[type=email], input[type=password], input[type=url], input[type=date], input[type=time] {
+  min-width: 150px;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  padding: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#ffffff));
+  background: -webkit-linear-gradient(top, #eeeeee, #ffffff);
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+                      inset 0 0 10px rgba(0,0,0,0.15);
+  vertical-align: middle;
+}
+input[type=text]:focus, textarea:focus, input[type=email]:focus, input[type=password]:focus, input[type=url]:focus, input[type=date]:focus, input[type=time]:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 4px rgba(27, 155, 224, 0.9),
+                      inset 0 0 10px rgba(0,0,0,0.15),
+                      0 1px 0 rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: padding-box;
+}
+.defaultform form input[type=text]:disabled, .defaultform form textarea:disabled, .defaultform form input[type=email]:disabled, 
+.defaultform form input[type=password]:disabled, .defaultform form input[type=url]:disabled, .defaultform form input[type=date]:disabled,
+.defaultform form input[type=time]:disabled {
+  background: #e8e8e8;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  opacity: 0.6;
+}
+.defaultform form textarea {
+  display: block;
+  overflow: auto;
+
+  margin: 2px;
+}
+.defaultform form input[type=range] {
+  -webkit-appearance: none;
+  height: 3px;
+  width: 150px;
+  border: 1px solid #aaaaaa;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#ffffff));
+  background: -webkit-linear-gradient(top, #dddddd, #ffffff);
+  border-radius: 3.5px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+                      inset 0 0 1px rgba(0,0,0,0.1);
+  vertical-align: middle;
+  margin: 5px 2px;
+  cursor: pointer;
+}
+.defaultform form input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #aaaaaa;
+  border-radius: 8.5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+  background: -webkit-linear-gradient(top, #ffffff, #dddddd);
+  -webkit-background-clip: content-box;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+                      inset 0 0 3px rgba(0,0,0,0.1);
+}
+.defaultform form input[type=range]:hover::-webkit-slider-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#d4d4d4));
+  background: -webkit-linear-gradient(top, #f8f8f8, #d8d8d8);
+}
+.defaultform form input[type=range]:disabled {
+  background: #eeeeee;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  opacity: 0.6;
+  cursor: default;
+}
+.defaultform form input[type=range]:disabled::-webkit-slider-thumb {
+  background: #eeeeee;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.buttonset input[type=button], .buttonset input[type=submit], .buttonset button {
+  margin: 0 -5px 0 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25),
+                      inset 0 0 10px rgba(0,0,0,0.1);
+}
+.buttonset input[type=button]:first-child, .buttonset input[type=submit]:first-child, .buttonset button:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.buttonset input[type=button]:last-child, .buttonset input[type=submit]:last-child, .buttonset button:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.buttonset input[type=button]:active, .buttonset input[type=submit]:active, .buttonset button:active {
+  top: 0;
+  z-index: 1;
+}
+.buttonset input[type=button]:hover, .buttonset input[type=submit]:hover, .buttonset button:hover {
+  z-index: 1;
+}
+.buttonset {
+  margin: 2px;
+  display: inline-block;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25),
+                      inset 0 0 10px rgba(0,0,0,0.1);
+}
+.defaultform form select {
+  -webkit-appearance: none;
+  background: url(http://i.imgur.com/Lt32a.png) center right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+  min-width: 150px;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  padding: 5px;
+  padding-right: 34px;
+  font-size: 12px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+                      inset 0 0 10px rgba(0,0,0,0.15);
+  vertical-align: middle;
+  cursor: pointer;
+  text-shadow: 0 1px 0 white;
+}
+.defaultform form select:hover {
+  background: url(http://i.imgur.com/Lt32a.png) center right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#d8d8d8));
+}
+.defaultform form select:focus {
+  outline: 0;
+  -webkit-background-clip: padding-box;
+  background: url(http://i.imgur.com/Lt32a.png) center right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#ffffff));
+}
+.defaultform form select:disabled {
+  background: url(http://i.imgur.com/Lt32a.png) center right no-repeat, #eeeeee;
+  opacity: 0.6;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-shadow: none;
+  cursor: default;
+}
+.defaultform form input[type=checkbox].switch {
+  width: 24px;
+  height: 12px;
+  margin-top: 4px;
+  border-radius: 6px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#ffffff));
+  background: -webkit-linear-gradient(top, #dddddd, #ffffff);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+                      inset 0 2px 2px rgba(0,0,0,0.1);
+}
+.defaultform form input[type=checkbox].switch::after {
+  content: " ";
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  line-height: auto;
+  left: -3px;
+  top: -4px;
+  margin: 0;
+  border: 1px solid #aaaaaa;
+  border-radius: 8.5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+  background: -webkit-linear-gradient(top, #ffffff, #dddddd);
+  -webkit-background-clip: content-box;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+                      inset 0 0 3px rgba(0,0,0,0.1);
+}
+.defaultform form input[type=checkbox].switch:checked {
+  background: -webkit-gradient(linear, left top, left bottom, from(#B1CBDD), to(#CCE9FF));
+  background: -webkit-linear-gradient(top, #B1CBDD, #CCE9FF);
+  border: 1px solid #8FA2B3;
+}
+.defaultform form input[type=checkbox].switch:checked::after {
+  right: -3px;
+  left: auto;
+}
+.defaultform form input[type=checkbox].switch:disabled, .defaultform form input[type=checkbox].switch:disabled::after {
+  background: #eeeeee;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.defaultform form input[type=checkbox].switch:checked:disabled {
+  background: #bedaee;
+}
+.defaultform form .select {
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 2px;
+ 
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  -webkit-background-clip: content-box;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+  background: -webkit-linear-gradient(top, #ffffff, #dddddd);
+}
+.defaultform form .select input[type=radio] {
+  -wekit-appearance: none;
+  padding: 6px 5px!important;
+  height: auto;
+  display: block;
+  margin: 0;
+  border: 0;
+  
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 1px solid #aaaaaa;
+  border-top: 1px solid #ffffff;
+  position: relative;
+  z-index: -1;
+  cursor: pointer;
+  text-align: left;
+  font-size: 13px!important;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+                      inset 0 0 10px rgba(0,0,0,0.1);
+}
+.defaultform form .select input[type=radio]::after {
+  content: attr(value);
+  color: inherit;
+  text-shadow: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  top: 0;
+  margin-left: 0;
+}
+.defaultform form .select input[type=radio]:hover {
+  background: rgba(0,0,0,0.05);
+}
+.defaultform form .select input[type=radio]:checked {
+  background: rgba(190, 218, 238, 0.7);
+  border-bottom: 1px solid #8FA2B3;
+  border-top: 1px solid #CCE9FF;
+  cursor: default;
+}
+.defaultform form .select input[type=radio]:disabled {
+  opacity: 0.6;
+  color: #888888;
+  cursor: default;
+  background: transparent;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+}
+.defaultform form .select input[type=radio]:first-child {
+  border-top: none;
+}
+.defaultform form .select input[type=radio]:last-child {
+  border-bottom: none;
+}
+
+
+/* horizontal select */
+.hselect {
+
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 1px;
+
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  -webkit-background-clip: content-box;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+  background: -webkit-linear-gradient(top, #ffffff, #dddddd);
+}
+.hselect input[type=radio] {
+color: #262626;
+  -wekit-appearance: none;
+  padding: 6px 5px!important;
+  height: auto;
+  display: -webkit-inline-box: ;block;
+  margin: 0;
+  border: 0;
+
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 1px solid #aaaaaa;
+  border-top: 1px solid #ffffff;
+  position: relative;
+  z-index: -1;
+  cursor: pointer;
+  text-align: center;
+  font-size: 13px!important;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+                      inset 0 0 10px rgba(0,0,0,0.1);
+}
+.hselect input[type=radio]::after {
+  content: attr(value);
+  color: inherit;
+  text-shadow: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  top: 0;
+  margin-left: 0;
+}
+.hselect input[type=radio]:hover {
+  background: rgba(0,0,0,0.05);
+}
+.hselect input[type=radio]:checked {
+  background: rgba(190, 218, 238, 0.7);
+  border-bottom: 1px solid #8FA2B3;
+  border-top: 1px solid #CCE9FF;
+  cursor: default;
+}
+.hselect input[type=radio]:disabled {
+  opacity: 0.6;
+  color: #888888;
+  cursor: default;
+  background: transparent;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+}
+.hselect input[type=radio]:first-child {
+  border-left: none;
+}
+.hselect input[type=radio]:last-child {
+  border-right: none;
+}

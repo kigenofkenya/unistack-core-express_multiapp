@@ -1,0 +1,70 @@
+
+  .textwrapper
+   {
+    padding:20px;
+height: 480px;
+    width: 600px;
+    position:relative;
+  margin:auto;
+
+   }
+  
+
+
+   
+  
+   
+   ::-webkit-scrollbar-track
+   {
+     	background-color: #000;
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc6286', endColorstr='#e1093b',GradientType=1 );
+   
+   
+   
+   
+   }
+   
+   ::-webkit-scrollbar
+   {
+   	width: 10px;
+
+   }
+   
+   ::-webkit-scrollbar-thumb
+   {
+  
+ background: rgba(40, 200, 255, .6);
+   -webkit-border-radius: 12px;
+   
+   cursor:pointer;
+   }
+#txtbox {
+
+   padding:10px;
+   border-radius: 2px;
+    border: none;
+-webkit-border-radius:4px;
+height:400px;
+    width:100%;
+    font: 9pt Consolas #fff;
+    outline: none;
+  resize:none;
+}
+
+   form textarea {
+    color:#fff;
+   background-color: #212a31; 
+ box-shadow:  0px 2px 11px 0px rgba(0, 0, 0, 0.3);
+ border: 1px solid #e2e6e6;
+ margin: 0;
+overflow-y:auto;
+ font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+ outline: none;
+
+}
+ .force-overflow
+   {
+    min-height: 400px;
+
+   }

@@ -1,0 +1,12 @@
+
+if !servertoken
+  include ../../partials/login_simple
+h2 Public.
+p some explanation
+
+h3 unregistered user links go here
+
+if message
+  div !{message}
+else
+  p no message

@@ -1,0 +1,5 @@
+ul.message-list
+  for item in tmpldata
+    li(data-rec_id="#{item._id}")
+      h4 #{item.name}
+      span: a(href="#" title="#{item.name}" data-section="#{item.id_table}") edit

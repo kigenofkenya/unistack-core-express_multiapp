@@ -1,0 +1,4 @@
+ul#asset_list
+  each item in items
+    li
+      a(data-uri='#{item}' data-reqroot='#{root}' href='#{root}/#{rt_ns}/get/#{item}')= item

@@ -1,0 +1,14 @@
+doctype
+html
+  head
+    title partial app test
+    meta(charset="UTF-8")
+    link(rel="stylesheet" href="#{root}/stylesheets/core.css")
+    script(src='#{root}/javascripts/appcontrollers/partialc1.js')
+  body
+    h1 partial app test
+    button(id="trig1" data-trig='partial1') trigger partial
+    button(id="trig2" data-trig='partial2') trigger partial 2
+    p#targ
+    div#inject
+    script(src='#{root}/javascripts/partialapp.js')

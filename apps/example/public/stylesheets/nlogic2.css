@@ -1,0 +1,193 @@
+[role^="main"] {
+	position: absolute;
+	
+	left: 0;
+	margin-left: 0%;
+	width: 100%;
+	top: 40px;
+	 height: -webkit-calc(100% - 40px);     
+	overflow: hidden;
+}
+[role^="navigation"] {
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 12em;
+	margin-left: -12em;
+	height: 100%;
+}
+[role^="sidebar"] {
+z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24em;
+	margin-left: -24em;
+	height: 100%;
+}
+[role^="content"] {
+		position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 0%;
+	width:100%;
+padding:0;
+	height: 100%;
+
+}
+[role^="presentation"] {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	margin-right: -100%;	
+	height: 100%;
+}
+[role^="bottomdrawer"] {
+	background-color: #eed200;
+	position: fixed;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 24em;
+	margin-top: 0em;
+	
+}
+/* Load state */
+.state-initial {
+	/* Any styling for on load state */
+}
+.state-initial [role^="content"] {
+	width: 100%;
+		margin-left: 0%;
+}
+.state-initial [role^="sidebar"] {
+	margin-left: -24em;
+}
+.state-initial [role^="navigation"] {
+	margin-left: -12em;
+}
+.state-initial [role^="bottomdrawer"] {
+		margin-top: 0;
+}
+
+/* Nav state */
+.state-nav [role^="navigation"] {
+	margin-left: 0em;
+}
+.state-nav [role^="content"] {
+	 width: calc(100% - (12em)); 
+	margin-left: 12em;
+}
+.state-nav[role^="sidebar"] {
+margin-left: -24em;
+}
+.state-nav [role^="bottomdrawer"] {
+		margin-top: 0;
+}
+/* Sidebar state */
+.state-sidebar [role^="sidebar"] {
+	margin-left: 0em;
+}
+.state-sidebar [role^="content"] {
+	 width: calc(100% - (-24em)); 
+margin-left: 24em;
+}
+.state-sidebar [role^="bottomdrawer"] {
+		margin-top: 0;
+}
+/* Sidebar_Extend state */
+.state-sidebar_extend [role^="navigation"] {
+	margin-left: 0em;
+}
+.state-sidebar_extend [role^="sidebar"] {
+	margin-left: 12em;
+}
+.state-sidebar_extend [role^="content"] {
+	 width: calc(100% - (36em)); 
+	margin-left: 36em;
+}
+.state-sidebar_extend [role^="bottomdrawer"] {
+		margin-top: 0;
+}
+/* Pres state */
+.state-halfpres [role^="presentation"] {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	margin-right: -50%;
+	
+	background-color: white;
+}
+.state-halfpres [role^="main"] {
+	margin-left: -50%;	
+}
+.state-halfpres [role^="bottomdrawer"] {
+		margin-top: 0;
+}
+
+/* Pres-full state */
+.state-pres [role^="presentation"] {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	margin-right: 0%;
+	
+	background-color: white;
+}
+.state-pres [role^="main"] {
+	margin-left: -100%;	
+}
+.state-pres [role^="bottomdrawer"] {
+		margin-top: 0;
+}
+
+/* bottom state */
+.state-bottom [role^="bottomdrawer"] {
+		margin-top: -24em;
+}
+.state-bottomdown [role^="bottomdrawer"] {
+	margin-top: 0;	
+}
+.state-bottomdown_navopen [role^="bottomdrawer"] {
+	margin-top: 0;	
+}
+.state-bottomdown_navopen [role^="navigation"] {
+	margin-left: 0em;
+}
+.state-bottomdown_navopen [role^="content"] {
+	margin-left: 24em;
+}
+
+/* Now get responsive */
+@media only screen and (max-width: 52em) {
+	[role^="navigation"],	
+	[role^="sidebar"] {
+		width: 80%;
+		margin-left: -100%;
+		z-index: 2;
+background-color:rgba(255,255,255,0.8);
+		-moz-box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.4);
+		-webkit-box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.4);
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.4);
+		color: #000000;
+	}
+
+	/* Nav state */
+	.state-nav [role^="content"],
+	.state-sidebar [role^="content"] {
+		margin-left: 0;
+	}
+	.state-nav,
+	.state-sidebar {
+		background-color: #eed200;
+	}
+
+  /* Show the close button */
+	.close {
+		display: block;
+	}
+}

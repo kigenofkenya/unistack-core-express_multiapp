@@ -1,0 +1,14 @@
+p#targ statusbox
+button#uploadbutt upload
+table(id="table1" class="coltable")
+  thead
+    tr
+      th#setlabel Dataset name
+    tr
+      each val, index in tabledata.fields
+        th(id="column-#{index}") #{Object.keys(val)[0]}  
+  tbody
+    each record in tabledata.records  
+      tr
+        each val, index in tabledata.fields
+          td(id="item-#{index}" class="#{val[Object.keys(val)[0]]}") #{record[Object.keys(val)[0]]}

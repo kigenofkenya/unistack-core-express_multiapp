@@ -1,0 +1,16 @@
+extends layout
+block content
+  div
+    div
+      if files
+        for file in files
+          a(class="btn btn-default" href="#{root}/view/#{file}") #{file}
+      else
+        i no saved files.
+
+
+
+
+
+
+     

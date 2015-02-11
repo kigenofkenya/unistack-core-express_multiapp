@@ -1,0 +1,66 @@
+h2 Admin in CMS
+#control_test
+  h3 Current:
+  ul
+    li: a(href='#' data-state='thirdpres') Routemap
+.menutree_box
+  h3 Dev Functions  	
+  ol.menutree
+    li
+      label.menu_label(for='c1') Basics
+      input#c1(type='checkbox')
+      ol
+        li
+          label.menu_label(for='c2') Security
+          input#c2(type='checkbox')
+          ol
+            li.page
+              a(href='/logout') log out
+            li.page
+              a(href='/hardreset') hard reset
+            li.page
+              a(href='/usrsrv') manage users
+        li
+          label.menu_label(for='c3') Page States
+          input#c3(type='checkbox')
+          ol
+            li.page
+              a(href='#' data-state='thirdpres') Third Presentation
+             li.page
+              a(href='#' data-state='sidebar_extend') sidebar extend
+            li.page
+              a(href='#' data-state='sidebar') sidebar
+            li.page
+              a(href='#' data-state='bottom') bottom drawer
+            li.page
+              a(href='#' data-state='halfpres') half presentation
+            li.page
+              a(href='#' data-state='nav') nav                                                                    
+            li
+              label.menu_label(for='c4') Menu Am2b1 
+              input#c4(type='checkbox')
+              ol
+                li.page
+                  a(href='#') Page Ap2b1
+    li
+      label.menu_label(for='c5') Menu Bm0a1
+      input#c5(type='checkbox')
+      ol
+        li
+          label.menu_label(for='c6') Menu Bm1a1
+          input#c6(type='checkbox')
+          ol
+            li.page
+              a(href='#') Page Bp1a1
+        li
+          label.menu_label(for='c7') Menu Bm1b1
+          input#c7(type='checkbox')
+          ol
+            li.page
+              a(href='#') Page Bp1b1
+            li
+              label.menu_label(for='c8') Menu Bm2b1
+              input#c8(type='checkbox')
+              ol
+                li.page
+                  a(href='#') Page Bp2b1

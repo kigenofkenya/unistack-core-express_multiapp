@@ -1,0 +1,65 @@
+#loginbox{
+    font-size: 0.8rem;
+ width:24rem;
+ display: block;
+ position: relative;
+
+}
+#loginbox form.login {
+
+  position: relative;
+width:100%;
+}
+form:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#loginbox form.login .field {
+  display: block;
+  border: 1px solid #BDBDBD;
+  float: left;
+  width: 100%;
+  background: #fff;
+}
+
+#loginbox form.login .field.tnb {
+  border-top: 0;
+}
+#loginbox form.login .field.half {
+  width: 40%;
+}
+#loginbox form.login .field.last {
+  border-left: 0;
+}
+#loginbox form.login .field label {
+  display: block;
+   font-size: 52.5%;
+  padding: 0;
+  margin-bottom:-0.22rem;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#loginbox form.login .field input {
+  display: block;
+  width: 100%;
+  margin-top:0rem;
+  padding: 0rem 0.2rem 0rem;
+  font-size: 1.0rem;
+  border: 0;
+  color: #212121;
+  outline: 0;
+}
+#loginbox form.login .submitbox {
+  float: left;
+    width: 20%;
+
+    font-size: 1.4rem;
+      padding: 0rem 1rem 0rem;
+
+
+
+}
+

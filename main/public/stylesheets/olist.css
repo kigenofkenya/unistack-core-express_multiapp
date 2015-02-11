@@ -1,0 +1,50 @@
+
+.odiv {
+  position: relative;
+        font-size: 16px;
+    line-height: 1.4;
+    padding-left: 0;
+}
+.odiv > ol>li,
+.odiv > ol>li >a{
+   font-size: 24px;
+     color: blue;
+}
+.odiv > ol>li>ol>li,
+.odiv > ol>li>ol>li >a{
+   font-size: 20px;
+color:orange;
+}
+.odiv > ol>li>ol>li>ol>li,
+.odiv > ol>li>ol>li>ol>li>a{
+   font-size: 18px;
+color:blue;
+}
+.odiv ol > li {
+    /*list-style: none;*/
+list-style-type: upper-roman;
+    margin-left: 2.5em;
+    /**list-style: decimal;*/
+}
+.odiv ol > li:before {
+    position: absolute;
+    width: 4em;
+    margin-left: -4.5em;
+    text-align: right;
+
+    color: #999999;
+}
+.odiv ol > li > ol > li {
+    list-style: none;
+/*list-style-type: upper-roman;*/
+    /*margin-left: 2.5em;*/
+  list-style-type: decimal;
+}
+
+.odiv li>ol {
+    counter-reset: level;
+}
+.odiv li>ol > li:before {
+    content: counters(level, ".")".";
+    counter-increment: level;
+}

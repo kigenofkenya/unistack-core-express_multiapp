@@ -1,0 +1,38 @@
+[   
+    {
+    	"name" : "core assets",
+		"uri" : "",
+		"children":[
+		{"name" : "todo list","uri" : "todos"},
+		{"name" : "tagging system","uri" : "blogtag"}
+		]
+	},
+    {
+    	"name" : "blog",
+		"uri" : "blog"
+	},
+	{
+    	"name" : "database cluster",
+		"uri" : "dbcluster"
+	},
+	{
+		"name" : "data management suite",
+		"uri" : "dataman",
+		"children":[
+		{"name" : "table1","uri" : "table1"},
+		{"name" : "tagging system","uri" : "blogtag"}
+		]
+	},
+	{
+		"name" : "editor ide",
+		"uri" : "ide",
+
+				"children":[
+		{"name" : "bootsrapversion","uri" : "mdboot","children":[
+		{"name" : "boot1","uri" : "mdboot1"},
+		{"name" : "boot2","uri" : "mdboot2"}
+		]},
+		{"name" : "basic version","uri" : "mdbasic"}
+		]
+	}
+]

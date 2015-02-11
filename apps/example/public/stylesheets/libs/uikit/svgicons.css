@@ -1,0 +1,104 @@
+
+
+/* SVG ICONS 
+
+Every SVG icon must use the svg class to ensure proper styling. The hover state is really only for the demo, but I guess you could use it if you could find a practical use for it. 
+
+
+*/
+.icon-container {
+  background: #e7e7e7;
+}
+.icon-container span {
+  position: relative;
+  /*   &:after{
+     content: attr(class);
+      font-size: 70%;
+      opacity: .3;
+      display: block;
+      position: absolute;
+      left: 0;
+    } */
+}
+svg {
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.75, 0.75);
+  height: 5em;
+  width: 5em;
+  padding: 14px;
+  display: inline-block;
+  margin: 0px;
+  stroke-width: 1px;
+  fill: #1b1e24;
+  stroke: transparent;
+}
+.icon-container svg {
+  opacity: 1;
+}
+.icon-container svg:hover {
+  animation: svgtrans 2s 1s linear forwards;
+}
+.small svg {
+  transform: scale(0.5, 0.5);
+}
+.big svg {
+  transform: scale(1, 1);
+}
+/* here are some custom colors for certain icons, the rest default to black */
+.chrome svg {
+  fill: #9dab6f;
+  stroke: #849255;
+}
+.check svg {
+  fill: #9dab6f;
+  stroke: #849255;
+}
+.x svg {
+  fill: #eb5448;
+  stroke: #e6291a;
+}
+.ie svg {
+  fill: #2c90c6;
+  stroke: #23729c;
+}
+.amenu svg {
+  fill: #1b1e24;
+  stroke: #050607;
+}
+.opera svg {
+  fill: #eb5448;
+  stroke: #1b1e24;
+}
+.heart svg {
+  fill: #eb5448;
+  stroke: #e6291a;
+}
+.safari svg {
+  fill: #2c90c6;
+  stroke: #23729c;
+}
+.firefox svg {
+  fill: #ef7b32;
+  stroke: #dc6012;
+}
+@keyframes svgtrans {
+  0% {
+    stroke: transparent;
+  }
+  25% {
+    fill: transparent;
+    stroke: #d6d6d6;
+  }
+  35% {
+    stroke: #748097;
+  }
+  50%,
+  80% {
+    fill: transparent;
+    stroke: #1b1e24;
+  }
+  100% {
+    fill: inherit;
+    stroke: inherit;
+  }
+}

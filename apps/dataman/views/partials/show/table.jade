@@ -1,0 +1,28 @@
+div#main.tablediv
+  table#table1
+    thead
+      tr
+        each hdr in headers
+          th #{hdr.label}
+    tbody
+      if records && records.length > 0
+        each rec in records
+          tr(id="record_#{rec.id}")
+            each hdr in headers
+              - var param = hdr.name
+              if rec[param]
+                if hdr.col_class == "imagecolumn"
+                  td.imagecolumn
+                    img.user-tumb(src='#{root}/data/images/raw_thumbnails/#{rec.thumbimg}')
+                else if hdr.col_class == "namecolumn"
+                 td(id="name_#{rec.id}" class="#{hdr.col_class} #{hdr.editable_class}")= rec[param]                        
+                else
+                 td(class="#{hdr.col_class} #{hdr.editable_class}")= rec[param]
+              else
+                if hdr.col_class == "namecolumn"
+                  td(id="name_#{rec.id}" class="#{hdr.col_class} #{hdr.editable_class}") no data
+                else
+                  td(class="#{hdr.col_class} #{hdr.editable_class}") no data
+      else
+        tr
+          td(class='list-norecs', colspan= headers.length) There are currently no records of this type.

@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title #{page}
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', type='text/css', href='#{root}/res/css/base.css')
+  body
+    #section1.content
+      h2 #{page}
+      p#targ
+      p shared block for each page.  	
+    block content
+    script.
+      var pageToken ='!{page}';  	
+    script(type='text/javascript', src='#{root}/res/js/modules/jsCookies.js')
+    if initscript
+      script(type='text/javascript', src='#{root}/apps/#{applet}/#{initscript}.js')

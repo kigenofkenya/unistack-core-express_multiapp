@@ -1,0 +1,80 @@
+extends layout_f
+
+block navigation
+  div.navheader
+    | !{srv_top}  
+    a(href="#", title="test2" data-state='initial') initial
+  ul.sidenav#pageCtl
+    li(class="active wide" data-fetch="overview")
+      a(href="#") overview  
+    li(class="wide"  data-fetch="suppliers")
+      a(href="#") suppliers    
+    li(class="wide"  data-fetch="products")
+      a(href="#") products 
+    li(class="wide"  data-fetch="items")
+      a(href="#") items
+  div#statpanel
+    p Status:
+      span#status unsubmitted                   
+block sidebar
+  ul.listtype1
+    li: a(href="#") link 1
+    li: a(href="#") link 2
+    li: a(href="#") link 3
+    li: a(href="#") link 4
+    li: a(href="#") link 5
+    li: a(href="#") link 6    
+block content
+  div.stage_box
+    div#stage_left
+      h3 some info
+      div.messages
+        h4 table name
+        div.searchbox
+          input(type="search" class="search" placeholder="Search this table")
+        div.message-box#target
+    div#stage_right
+      div#wd-c
+        div#wd-1
+          div#ctlSet_2
+              button(class="btn blue"  data-tab='tab-1') inspect(&delte)
+              button(class="btn blue" data-tab='tab-2') view
+              button(class="btn blue" data-tab='tab-3') create/update suppliers
+              button(class="btn blue" data-tab='tab-4') create/update products 
+        div#wd-2
+          div#inspect.tabs      
+            div.tab
+              input(type="radio" id="tab-1" name="tab-group-1" checked)
+              label(class="tablabel" for="tab-1") main view
+              div.tabcontent
+                div#maintab
+                  h4 main viewscreen
+            div.tab
+              input(type="radio" id="tab-2" name="tab-group-1")
+              label(class="tablabel" for="tab-2") update/delete
+              div.tabcontent
+                div#viewrec
+                  h4 viewing a record       
+            div.tab
+              input(type="radio" id="tab-3" name="tab-group-1")
+              label(class="tablabel" for="tab-3") create
+              div.tabcontent
+                div.defaultform#form1 !{srv_1}
+            div.tab
+              input(type="radio" id="tab-4" name="tab-group-1")
+              label(class="tablabel" for="tab-4") update/delete
+              div.tabcontent
+                div.defaultform#form2 !{srv_2}
+        div#wd-3
+          div#codepen-footer
+                                     
+            span#footer-right !{srv_bottom}                                                       
+block drawer
+  h2 drawer
+  a(href="#", title="test2",data-state='initial') initial
+  div(id="list_targ")
+
+block presentation
+  h2 presentation
+  p: a(href="#", title="test2",data-state='initial') initial
+

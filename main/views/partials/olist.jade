@@ -1,0 +1,45 @@
+.odiv
+  h3 RouteMap 
+  ol
+    for item in apps
+      if !item.children
+        li: a(href="#{item.uri}") #{item.name}
+      else
+         li
+           | <a href="#{item.uri}"> #{item.name} </a>
+           ol
+             for child1 in item.children
+               if !child1.children
+                 li: a(href="#{item.uri}/#{child1.uri}") #{child1.name}
+               else                                       	
+                 li
+                   | <a href="#{child1.uri}"> #{child1.name} </a>
+                   ol
+                     for child2 in child1.children
+                       if !child2.children                                    	
+                         li #{child2.name}
+                       else
+                         li
+                           | childlevel2
+                           ol
+                             li childitem  
+
+    //-     li
+    //-       | Third Third item
+    //-       ol
+    //-         li Third Third First item
+    //-         li
+    //-           | Third Third Second item
+    //-           ol
+    //-             li Third Third Second First item
+    //-         li Third Third Third item
+    //-     li Third Fourth item
+    //-     li Third Fifth item
+    //- li Fourth item
+    //- li
+    //-   | Fifth item
+    //-   ol
+    //-     li Fifth First item
+    //-     li Fifth Second item
+    //- li Sixth item  
+
